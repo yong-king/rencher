@@ -3,12 +3,12 @@ entries:
   my-nginx-chart:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-09-11T10:11:38.729340995+08:00"
+    created: "2025-09-11T11:02:45.391053515+08:00"
     description: A simple Nginx Helm Chart
-    digest: 9c6e9d5f05af1bbb6f9dbe4238b2af8bfe96443deb4e48a369577b9c25589724
+    digest: d48fc9eac33b9b6a7df73330bafd76d2cc794eb96295840563f08aab33e4979e
     name: my-nginx-chart
     type: application
     urls:
     - https://yong-king.github.io/rencher/charts/my-nginx-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-09-11T10:11:38.728948775+08:00"
+generated: "2025-09-11T11:02:45.390707997+08:00"
