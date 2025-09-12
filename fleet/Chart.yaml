@@ -1,0 +1,7 @@
+apiVersion: v2
+name: my-nginx-chart
+description: A simple Nginx Helm Chart
+type: application
+version: 0.1.1      # Chart 版本，每次更新要增加
+appVersion: "1.1.0" # 你的应用版本，对应镜像 tag
+

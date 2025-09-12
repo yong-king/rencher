@@ -1,0 +1,24 @@
+apiVersion: v1
+entries:
+  my-nginx-chart:
+  - apiVersion: v2
+    appVersion: 1.1.0
+    created: "2025-09-11T12:43:44.26986106+08:00"
+    description: A simple Nginx Helm Chart
+    digest: acd2ada160c6d8d8d7ea17b25749033b32292d22caab8549d1822fcc07c1265e
+    name: my-nginx-chart
+    type: application
+    urls:
+    - https://yong-king.github.io/rencher/charts/my-nginx-chart-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-09-11T12:43:44.269504541+08:00"
+    description: A simple Nginx Helm Chart
+    digest: d48fc9eac33b9b6a7df73330bafd76d2cc794eb96295840563f08aab33e4979e
+    name: my-nginx-chart
+    type: application
+    urls:
+    - https://yong-king.github.io/rencher/charts/my-nginx-chart-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-09-11T12:43:44.268393884+08:00"
