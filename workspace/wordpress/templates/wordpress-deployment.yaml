@@ -178,6 +178,9 @@ spec:
           securityContext: {{- include "common.compatibility.renderSecurityContext" (dict "secContext" .Values.containerSecurityContext "context" $) | nindent 12 }}
           {{- end }}
           env:
+            - name: WORDPRESS_DB_HOST
+            # 必须使用 ClusterIP Service 名称
+              value: wordpress-workspace-wordpress-mariadb 
             - name: BITNAMI_DEBUG
               value: {{ ternary "true" "false" (or .Values.image.debug .Values.diagnosticMode.enabled) | quote }}
             - name: ALLOW_EMPTY_PASSWORD
