@@ -1252,7 +1252,7 @@ mariadb:
   ##      https://github.com/bitnami/containers/blob/main/bitnami/mariadb/README.md#creating-a-database-user-on-first-run
   ##
   auth:
-    rootPassword: ""
+    rootPassword: "W38U7RL316"
     database: bitnami_wordpress
     username: bn_wordpress
     password: ""
