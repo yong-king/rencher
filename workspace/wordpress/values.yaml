@@ -398,15 +398,23 @@ tolerations: []
 resourcesPreset: "micro"
 ## @param resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
 ## Example:
-## resources:
-##   requests:
-##     cpu: 2
-##     memory: 512Mi
-##   limits:
-##     cpu: 3
-##     memory: 1024Mi
+# resources:
+#   requests:
+#     cpu: 2
+#     memory: 512Mi
+#   limits:
+#     cpu: 3
+#     memory: 1024Mi
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 1
+    memory: 1Gi
+
 ##
-resources: {}
+# resources: {}
 ## Container ports
 ## @param containerPorts.http WordPress HTTP container port
 ## @param containerPorts.https WordPress HTTPS container port
