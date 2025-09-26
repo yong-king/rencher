@@ -853,6 +853,8 @@ secondaryIngress:
 ## ref: https://kubernetes.io/docs/concepts/storage/persistent-volumes/
 ##
 persistence:
+  # 这里只挂 /bitnami，保证 Apache/PHP/WordPress 都被初始化
+  mountPath: /bitnami
   ## @param persistence.enabled Enable persistence using Persistent Volume Claims
   ##
   enabled: true
@@ -861,7 +863,7 @@ persistence:
   ## If set to "-", storageClassName: "", which disables dynamic provisioning
   ## If undefined (the default) or set to null, no storageClassName spec is set, choosing the default provisioner
   ##
-  storageClass: "nfs-client"
+  storageClass: ""
   ## @param persistence.accessModes [array] Persistent Volume access modes
   ##
   accessModes:
